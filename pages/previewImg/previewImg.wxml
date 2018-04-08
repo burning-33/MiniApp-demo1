@@ -1,0 +1,21 @@
+<!--pages/previewImg/previewImg.wxml-->
+<view class='preText'>
+  <text>预览图片</text>
+</view>
+<button bindtap='getImgInfo'>点击获取第一张图片信息</button>
+<view>
+  <text>第一张图片的信息：</text>
+  <text>宽：{{imgInfo.width}}</text>
+  <text>高：{{imgInfo.height}}</text>
+  <text>类型：{{imgInfo.imgtype}}</text>
+  <text>本地路径：{{imgInfo.path}}</text>
+  <text>图片方向：{{imgInfo.orientation}}</text>
+</view>
+<view>
+  <view class='preview'>
+    <view wx:for="{{imgArr}}" wx:key="index">
+      <image mode='aspectFit' data-src='{{item}}' src='{{item}}' bindtap='previewImg'></image>
+    </view>
+  </view>
+  <!-- <button>预览图片</button> -->
+</view>

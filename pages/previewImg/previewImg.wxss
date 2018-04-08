@@ -1,0 +1,16 @@
+/* pages/previewImg/previewImg.wxss */
+.preview{
+  display: flex;
+  flex-flow: row wrap;
+}
+.preview>view{
+  border: 1px solid;
+  width: 48%;
+}
+.preview>view>image{
+  width: 90%;
+  height: 400rpx;
+}
+.preText{
+  text-align: center;
+}

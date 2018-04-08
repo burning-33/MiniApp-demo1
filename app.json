@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/canvas/canvas",
+    "pages/animation/animation",
+    "pages/livePlayer/livePlayer",
+    "pages/videoPlay/videoPlay",
+    "pages/previewImg/previewImg",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}
