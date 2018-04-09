@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/customService/customService",
     "pages/canvas/canvas",
     "pages/animation/animation",
     "pages/livePlayer/livePlayer",

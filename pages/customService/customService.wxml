@@ -1,0 +1,20 @@
+<!--pages/customService/customService.wxml-->
+ <!--  联系客服  -->
+ <!-- <contact-button  session-from='weapp' class='guestService'>
+    <text class='guestServiceText'>客服</text>
+  </contact-button> -->
+  <button open-type="contact" type='primary' session-from='weapp' size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="primary"> 联系客服(primary)</button>
+   <!--  用户转发  -->
+  <button open-type="share" type='default' size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="default">用户转发(default)</button>
+   <!--  获取用户信息  -->
+  <button size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" bindtap="warn" open-type="getUserInfo" bindgetuserinfo='getUserInfo' disabled="{{disabled}}" type='warn'> 获取用户信息(warn)</button>
+   <!--  获取用户手机号  -->
+  <button size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"  disabled="{{disabled}}" open-type="getPhoneNumber" bindgetphonenumber='getphonenumber' type='default' >获取用户手机号</button>
+   <!--  打开APP  -->
+  <button disabled="{{disabled}}"size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" open-type="launchApp" app-parameter='wechat' binderror='launchAppError' type='default' >打开APP</button>
+  <button bindtap="setDisabled" hover-class="other-button-hover">点击设置以上按钮disabled属性</button>
+  <button bindtap="setPlain">plain(按钮是否镂空，背景色透明)</button>
+  <button bindtap="setLoading">点击设置以上按钮loading属性</button>
+  
+
+
