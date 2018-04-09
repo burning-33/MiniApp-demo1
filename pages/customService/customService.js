@@ -43,6 +43,23 @@ var pageObject={
       loading: !this.data.loading
     })
   },
+  showShare(){
+    console.log("show")
+    wx.showShareMenu({
+      withShareTicket:true
+    })
+  },
+  hideShare() {
+    console.log("hide")
+    wx.hideShareMenu();
+  },
+  updateShare(){
+    wx.updateShareMenu({
+      withShareTicket: true,
+      success(res) {
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -110,8 +127,21 @@ var pageObject={
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-  
+  onShareAppMessage: function (options) {
+    if (options.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(options.target)
+    }
+    return {
+      title: '自定义转发标题',
+      success: function (res) { 
+        // 转发成功
+        // console.log(res);
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    } 
   }
 }
 for (var i = 0; i < types.length; ++i) {

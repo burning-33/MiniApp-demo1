@@ -6,6 +6,9 @@
   <button open-type="contact" type='primary' session-from='weapp' size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="primary"> 联系客服(primary)</button>
    <!--  用户转发  -->
   <button open-type="share" type='default' size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="default">用户转发(default)</button>
+  <button bindtap='showShare' size='mini'>显示右上角转发按钮</button>
+    <button bindtap='hideShare' size='mini'>隐藏右上角转发按钮</button>
+    <button bindtap='updateShare' size='mini'>更新右上角转发按钮</button>
    <!--  获取用户信息  -->
   <button size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" bindtap="warn" open-type="getUserInfo" bindgetuserinfo='getUserInfo' disabled="{{disabled}}" type='warn'> 获取用户信息(warn)</button>
    <!--  获取用户手机号  -->

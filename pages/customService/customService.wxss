@@ -1,6 +1,6 @@
 /* pages/customService/customService.wxss */
 button{
-  margin: 40rpx 0;
+  margin: 30rpx 0;
 }
 .button-hover {
   background-color: red;
