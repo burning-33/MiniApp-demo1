@@ -39,8 +39,6 @@ Page({
     if (wx.chooseAddress) {
       wx.chooseAddress({
         success: function (res) {
-          console.log(JSON.stringify(res))
-          console.log(res);
           _this.setData({
             addressInfo: {
               name: res.userName,
