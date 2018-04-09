@@ -5,7 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    access_token: ''
+    access_token: '',
+    addressInfo:{
+      name:'',
+      email:'',
+      province:'',
+      city:'',
+      county:'',
+      detail:'',
+      nationalCode:'',
+      tel:''
+    }
   },
   getwxCode(){
     var _this = this;
@@ -22,6 +32,35 @@ Page({
         console.log(res);
       }
     })
+   
+  },
+  getAddress(){
+    var _this = this;
+    if (wx.chooseAddress) {
+      wx.chooseAddress({
+        success: function (res) {
+          console.log(JSON.stringify(res))
+          console.log(res);
+          _this.setData({
+            addressInfo: {
+              name: res.userName,
+              email: res.postalCode,
+              province: res.provinceName,
+              city: res.cityName,
+              county: res.countyName,
+              detail: res.detailInfo,
+              nationalCode: res.nationalCode,
+              tel: res.telNumber
+            }
+          })
+        },
+        fail: function (err) {
+          console.log(JSON.stringify(err))
+        }
+      })
+    } else {
+      console.log('当前微信版本不支持chooseAddress');
+    }
   },
   /**
    * 生命周期函数--监听页面加载

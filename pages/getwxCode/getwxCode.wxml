@@ -1,3 +1,10 @@
 <!--pages/getwxCode/getwxCode.wxml-->
 <text>通过该接口，仅能生成已发布的小程序的二维码。</text>
 <button bindtap='getwxCode'>生成小程序码</button>
+<text>调起用户编辑收货地址原生界面，并在编辑完成后返回用户选择的地址。</text>
+<button bindtap='getAddress'>获取收货地址</button>
+  <view><text>收货人：{{addressInfo.name}}</text></view>
+  <view><text>邮编:{{addressInfo.email}}</text></view>
+  <view><text>电话:{{addressInfo.tel}}</text></view>
+  <view><text>地址:{{addressInfo.province}},{{addressInfo.city}},{{addressInfo.county}},{{addressInfo.detail}}</text></view>
+
