@@ -6,7 +6,6 @@ var pageObject={
    * 页面的初始数据
    */
   data: {
-    access_token:'',
     defaultSize: 'default',
     primarySize: 'default',
     warnSize: 'default',
@@ -57,6 +56,7 @@ var pageObject={
     wx.updateShareMenu({
       withShareTicket: true,
       success(res) {
+
       }
     })
   },
@@ -64,22 +64,7 @@ var pageObject={
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var _this = this;
-    wx.request({
-      url: 'https://api.weixin.qq.com/cgi-bin/token',
-      data:{
-        grant_type:'client_credential',
-        appid:'wx480c49248e4c9aa7',
-        secret:'cdda9bf108371974b28a3e1412a7092c'
-      },
-      method:'get',
-      success:function(res){
-        // console.log(res.data.access_token);
-        _this.setData({
-          access_token: res.data.access_token
-        })
-      }
-    })
+    
   },
 
   /**

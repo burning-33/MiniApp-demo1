@@ -1,0 +1,3 @@
+<!--pages/getwxCode/getwxCode.wxml-->
+<text>通过该接口，仅能生成已发布的小程序的二维码。</text>
+<button bindtap='getwxCode'>生成小程序码</button>
