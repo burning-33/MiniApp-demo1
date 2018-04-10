@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/movable/movable",
+    "pages/scrollView/scrollViiew",
     "pages/location/location",
     "pages/card/card",
     "pages/getwxCode/getwxCode",
