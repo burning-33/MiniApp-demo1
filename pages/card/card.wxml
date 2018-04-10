@@ -1,0 +1,11 @@
+<!--pages/card/card.wxml-->
+<text>获取用户过去三十天微信运动步数，需要先调用 wx.login 接口。需要用户授权 scope.werun</text>
+<button bindtap='addCard' >获取微信步数</button>
+<text>打开同一公众号下关联的另一个小程序。</text>
+<button bindtap='openMiniPrograme' >打开小程序</button>
+<text>返回到上一个小程序，只有在当前小程序是被其他小程序打开时可以调用成功</text>
+<button bindtap='returnMiniPrograme' >返回上一个小程序</button>
+<text>选择用户的发票抬头。</text>
+<button bindtap='getinvoiceTitle' >获取发票抬头</button>
+<text>生物认证</text>
+<button bindtap='fingerPrint' >指纹解锁</button>

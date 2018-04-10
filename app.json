@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/card/card",
     "pages/getwxCode/getwxCode",
     "pages/customService/customService",
     "pages/canvas/canvas",
