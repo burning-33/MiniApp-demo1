@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/location/location",
     "pages/card/card",
     "pages/getwxCode/getwxCode",
     "pages/customService/customService",
