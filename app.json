@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/coverView/coverView",
     "pages/movable/movable",
     "pages/scrollView/scrollViiew",
     "pages/location/location",
